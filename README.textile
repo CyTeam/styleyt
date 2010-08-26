@@ -1,0 +1,15 @@
+h1. Styleyt
+
+h2. Goal of the project
+
+* A general styling who could be easily be applied to the different CyT projects.
+* The styling must be theme based and be easily to change and modify.
+** It must have a color theme.
+** It must have a icon theme.
+** It must have a look and feel theme.
+
+h2. Realisation
+
+* It must be usable as an rails extension.
+* Installation should be installed via "rails generate styleyt:install" or "rails generate styleyt:install:[theme]"
+** "rails generate styleyt:install" must be after generation configured by hand -> colors etc.
