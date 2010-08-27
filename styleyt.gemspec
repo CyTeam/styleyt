@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/generators/styleyt_generator.rb",
      "lib/generators/templates/test.css",
-     "lib/templates/styleyt/test.css",
      "test/helper.rb",
      "test/test_styleyt.rb"
   ]
