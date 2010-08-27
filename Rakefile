@@ -5,13 +5,17 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "styleyt"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Style generator for cyt projects.}
+    gem.description = %Q{Generates styles for cyt projects.}
     gem.email = "roman.simecek@screenconcept.ch"
     gem.homepage = "http://github.com/CyTeam/styleyt"
     gem.authors = ["Roman Simecek"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.rubyforge_project = gem.name
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.files = Dir["{lib,test}/**/*", "[A-Z]*"]
+    gem.require_path = 'lib'
+    gem.add_dependency 'rails', '3.0.0.rc'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
