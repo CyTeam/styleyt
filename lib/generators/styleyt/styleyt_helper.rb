@@ -20,7 +20,7 @@ module Styleyt
     # Asks which theme should be used
     #
     def ask_for_theme
-      theme = ask "Available themes: #{available_themes}\nWhich theme do you like?"
+      theme = ask "Available themes: #{available_themes}\nWhich theme would you like to install?"
       theme = 'default' if theme.empty?
 
       theme
