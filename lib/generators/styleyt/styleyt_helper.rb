@@ -49,10 +49,12 @@ module Styleyt
       File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY)
     end
 
+    
+    #
+    # Returns the filename without any extensions
+    #
     def remove_file_suffix(file)
-      file = file.split('.')
-
-      file.first
+      file.split('.').first
     end
     
   end
