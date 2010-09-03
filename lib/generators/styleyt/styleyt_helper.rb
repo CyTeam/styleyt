@@ -30,10 +30,9 @@ module Styleyt
     # Returns the avaible themes
     #
     def available_themes
-      Dir.chdir(File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes'))
-      themes = Dir.glob("*").inject("") {|themes, file| themes << file + ','}
-
-      themes[0..themes.length-2]
+      Dir.chdir(File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes')) do
+        Dir.glob("*").join(',')
+      end
     end
 
     #
