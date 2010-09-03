@@ -4,7 +4,7 @@ module Styleyt
     #
     # Path to the template directory
     #
-    TEMPLATES_DIRECTORY = '../templates'
+    TEMPLATES_DIRECTORY = '../../../templates'
 
     #
     # Asks which theme should be used.
