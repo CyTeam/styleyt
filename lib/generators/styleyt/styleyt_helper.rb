@@ -36,7 +36,6 @@ module Styleyt
     def src_root_dir
       File.join(File.dirname(__FILE__), TEMPLATES_DIRECTORY)
     end
-    alias :templates_dir :src_root_dir
     
   end
 end
