@@ -4,7 +4,7 @@ module Styleyt
     #
     # Path to the template directory
     #
-    TEMPLATES_DIRECTORY = '../../../templates/stylesheets'
+    SASS_TEMPLATES_DIRECTORY = '../../../templates/stylesheets'
 
     #
     # Asks which theme should be used.
@@ -17,7 +17,7 @@ module Styleyt
     # Returns the avaible themes
     #
     def available_themes
-      Dir.chdir(File.join(File.dirname(__FILE__), TEMPLATES_DIRECTORY, 'themes'))
+      Dir.chdir(File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes'))
       themes = Dir.glob("*").inject("") {|themes, file| themes << file + ','}
 
       themes[0..themes.length-2]
@@ -27,14 +27,14 @@ module Styleyt
     # Returns the theme directorys
     #
     def theme_directory(theme)
-      File.join(File.dirname(__FILE__), TEMPLATES_DIRECTORY, 'themes', theme)
+      File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes', theme)
     end
 
     #
     # Returns the source route directory
     #
     def src_root_dir
-      File.join(File.dirname(__FILE__), TEMPLATES_DIRECTORY)
+      File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY)
     end
     
   end

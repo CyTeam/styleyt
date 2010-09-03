@@ -7,7 +7,7 @@ module Styleyt
     include StyleytHelper
 
     def self.source_root
-      File.join(File.dirname(__FILE__), TEMPLATES_DIRECTORY)
+      File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY)
     end
 
     desc "install the default layout"
