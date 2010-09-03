@@ -4,7 +4,7 @@ require File.join(File.dirname(__FILE__), 'styleyt_helper')
 module Styleyt
   class ThemeGenerator < Rails::Generators::Base
 
-    include Styleyt::StyleytHelper
+    include StyleytHelper
 
     def self.source_root
       File.join(File.dirname(__FILE__), TEMPLATES_DIRECTORY)
