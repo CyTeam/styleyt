@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
      "lib/generators/templates/test.css",
      "lib/generators/templates/themes/default/colors.sass",
      "lib/generators/templates/themes/red/colors.sass",
-     "test/helper.rb",
+     "test/styleyt_helper.rb",
      "test/test_styleyt.rb"
   ]
   s.homepage = %q{http://github.com/CyTeam/styleyt}
@@ -55,7 +55,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Style generator for cyt projects.}
   s.test_files = [
-    "test/helper.rb",
+    "test/styleyt_helper.rb",
      "test/test_styleyt.rb"
   ]
 
