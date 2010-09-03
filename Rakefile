@@ -17,6 +17,7 @@ begin
     gem.require_path = 'lib'
     gem.add_dependency 'rails', '3.0.0.rc'
     gem.add_dependency 'haml'
+    gem.add_dependency 'compass'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
