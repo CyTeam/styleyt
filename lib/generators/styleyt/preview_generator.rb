@@ -15,6 +15,7 @@ module Styleyt
       File.join(File.dirname(__FILE__), COMPILED_PREVIEW_DIRECTORY)
     end
 
+    desc "create a preview index.html"
     def install
       theme = ask_for_theme
       generate_preview(theme)
