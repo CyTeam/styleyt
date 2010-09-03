@@ -2,7 +2,7 @@ module Styleyt
   module StyleytHelper
 
     #
-    # Path to the template directory
+    # Path to the sass template directory
     #
     SASS_TEMPLATES_DIRECTORY = '../../../templates/stylesheets'
 
