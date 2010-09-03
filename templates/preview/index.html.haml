@@ -1,0 +1,62 @@
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:charset => 'utf-8'}/
+    %meta{:content => "Roman Simecek &lt;roman.simecek@cyt.ch&gt;", :name => "author"}/
+
+    %link{:rel => "shortcut icon", :href => 'favicon.ico'}/
+    
+    - [:screen, :print].each do |css|
+      %link{:rel => 'stylesheet', :href => "#{css.to_s}.css", :media => css.to_s}
+    /[if lt IE 8]
+      %link{:rel => 'stylesheet', :href => 'ie.css', :media => 'screen'}
+      
+    %title
+      Styleyt - Preview
+
+  %body
+    #container
+      #header
+        #logo{:style => 'margin: 14px; float: left;'}
+          %h1{:style => 'display: inline; color: #002B3D'} CyMail
+        #main-menu
+          %ul
+            - ["Mail Journal", "Compose Mail", "Settings", "Login"].each do |entry|
+              %li
+                = entry
+
+      #content
+        #alert.flash.alert You need to sign in or sign up before continuing.
+        %form#user_new.formtastic.user{"accept-charset" => "UTF-8", :action => "/users/sign_in", :method => "post"}
+          %div{:style => "margin: 0pt; padding: 0pt; display: inline;"}
+            %input{:name => "_snowman", :type => "hidden", :value => "\xE2\x98\x83"}/
+            %input{:name => "authenticity_token", :type => "hidden", :value => "U9J1bYde/Elhoeu6aUDT5rPF62TpojHFjnZ35TTl9u4="}/
+          %fieldset.inputs
+            %ol
+              %li#user_email_input.string.required
+                %label{:for => "user_email"}
+                  Email
+                  %abbr{:title => "required"} *
+                %input#user_email{:maxlength => "255", :name => "user[email]", :size => "50", :type => "text", :value => ""}/
+              %li#user_password_input.password.required
+                %label{:for => "user_password"}
+                  Password
+                  %abbr{:title => "required"} *
+                %input#user_password{:name => "user[password]", :size => "50", :type => "password"}/
+                %p.inline-hints Leave blank if you don't want to change it
+              %li#user_remember_me_input.boolean.optional
+                %label{:for => "user_remember_me"}
+                  %input{:name => "user[remember_me]", :type => "hidden", :value => "0"}/
+                  = succeed "Remember" do
+                    %input#user_remember_me{:name => "user[remember_me]", :type => "checkbox", :value => "1"}/
+                  me
+          %fieldset.buttons
+            %ol
+              %li.commit
+                %input#user_submit.create{:name => "commit", :type => "submit", :value => "Sign in"}/
+        %a{:href => "/users/sign_up"} Sign up
+        %br/
+        %a{:href => "/users/password/new"} Forgot your password?
+        %br/
+
+      #sidebar

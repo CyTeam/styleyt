@@ -16,6 +16,7 @@ begin
     gem.files = Dir["{lib,test}/**/*", "[A-Z]*"]
     gem.require_path = 'lib'
     gem.add_dependency 'rails', '3.0.0.rc'
+    gem.add_dependency 'haml'
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

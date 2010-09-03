@@ -23,7 +23,7 @@ module Styleyt
       #
       def copy_default_sass
         Dir.chdir(src_root_dir)
-        Dir.glob("*.s[c|a]ss").each{|file| copy_file "#{file}", "app/stylesheets/#{file}" }
+        Dir.glob(SASS_FILES).each{|file| copy_file "#{file}", "app/stylesheets/#{file}" }
         directory 'partials', 'app/stylesheets/partials'
       end
 
@@ -31,9 +31,8 @@ module Styleyt
       # Copies the sass definition files of the theme
       #
       def copy_theme_sass(theme)
-        theme = 'default' if theme.empty?
         Dir.chdir(theme_directory(theme))
-        Dir.glob("*.s[c|a]ss").each{|file| copy_file "themes/#{theme}/#{file}", "app/stylesheets/partials/#{file}" }
+        Dir.glob(SASS_FILES).each{|file| copy_file "themes/#{theme}/#{file}", "app/stylesheets/partials/#{file}" }
       end
     end
 
