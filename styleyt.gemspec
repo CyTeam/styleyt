@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{styleyt}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Simecek"]
-  s.date = %q{2010-08-27}
+  s.date = %q{2010-09-03}
   s.description = %q{Generates styles for cyt projects.}
   s.email = %q{roman.simecek@screenconcept.ch}
   s.extra_rdoc_files = [
@@ -19,7 +19,9 @@ Gem::Specification.new do |s|
     "README.textile",
      "Rakefile",
      "VERSION",
+     "lib/generators/helper/styleyt_generator.rb",
      "lib/generators/styleyt_generator.rb",
+     "lib/generators/styleyt_preview_generator.rb",
      "lib/generators/templates/ie.scss",
      "lib/generators/templates/ie6.scss",
      "lib/generators/templates/partials/_base.sass",
