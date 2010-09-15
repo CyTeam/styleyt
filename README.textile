@@ -11,8 +11,9 @@ h2. Goal of the project
 h2. Realisation
 
 * It must be usable as an rails extension.
-* Installation should be installed via "rails generate styleyt:install" or "rails generate styleyt:install:[theme]"
-** "rails generate styleyt:install" must be after generation configured by hand -> colors etc.
+* It is available as a 'styleyt' gem from http://gemcutter.org
+* It adds a two new rails generators:
+** styleyt:theme and styleyt:preview
 
 h2. Documentation
 
@@ -24,7 +25,7 @@ Code is available at "github":http://github.com/CyTeam/styleyt.
 
 Issue tracking is done using "Redmine":http://redmine.cyt.ch/projects/mailyt/issues.
 
-To get an idea on what we're currently focus on visit the "Roadmap":http://redmine.cyt.ch/projects/styleyt/issues.
+To get an idea on what we're currently focus on visit the "Roadmap":http://redmine.cyt.ch/projects/styleyt/roadmap.
 
 h2. License
 

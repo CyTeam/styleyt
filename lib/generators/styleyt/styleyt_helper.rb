@@ -17,27 +17,26 @@ module Styleyt
     SASS_FILES = '*.s[c|a]ss'
 
     #
-    # Asks which theme should be used.
+    # Asks which theme should be used
     #
     def ask_for_theme
-      theme = ask "Available themes: #{available_themes}\nWhich theme do you like?"
+      theme = ask "Available themes: #{available_themes}\nWhich theme would you like to install?"
       theme = 'default' if theme.empty?
 
       theme
     end
 
     #
-    # Returns the avaible themes
+    # Returns the available themes
     #
     def available_themes
-      Dir.chdir(File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes'))
-      themes = Dir.glob("*").inject("") {|themes, file| themes << file + ','}
-
-      themes[0..themes.length-2]
+      Dir.chdir(File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes')) do
+        Dir.glob("*").join(',')
+      end
     end
 
     #
-    # Returns the theme directorys
+    # Returns the theme directories
     #
     def theme_directory(theme)
       File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY, 'themes', theme)
@@ -50,10 +49,12 @@ module Styleyt
       File.join(File.dirname(__FILE__), SASS_TEMPLATES_DIRECTORY)
     end
 
+    
+    #
+    # Returns the filename without any extensions
+    #
     def remove_file_suffix(file)
-      file = file.split('.')
-
-      file.first
+      file.split('.').first
     end
     
   end
