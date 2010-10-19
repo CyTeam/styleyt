@@ -15,7 +15,7 @@ begin
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
     gem.files = Dir["{lib,test}/**/*", "[A-Z]*"]
     gem.require_path = 'lib'
-    gem.add_dependency 'rails', '3.0.0.rc'
+    gem.add_dependency 'rails', '3.0.0'
     gem.add_dependency 'haml'
     gem.add_dependency 'compass'
   end
