@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{styleyt}
-  s.version = "0.2.3"
+  s.version = "0.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roman Simecek"]
-  s.date = %q{2010-10-29}
+  s.date = %q{2011-02-14}
   s.description = %q{Generates styles for cyt projects.}
   s.email = %q{roman.simecek@screenconcept.ch}
   s.extra_rdoc_files = [
@@ -22,6 +22,53 @@ Gem::Specification.new do |s|
      "lib/generators/styleyt/preview_generator.rb",
      "lib/generators/styleyt/styleyt_helper.rb",
      "lib/generators/styleyt/theme_generator.rb",
+     "templates/images/16x16/add.png",
+     "templates/images/16x16/edit.png",
+     "templates/images/16x16/index.png",
+     "templates/images/16x16/remove.png",
+     "templates/images/22x22/arrow-right.png",
+     "templates/images/22x22/edit.png",
+     "templates/images/22x22/insert_booking.png",
+     "templates/images/22x22/remove.png",
+     "templates/images/32x32/edit.png",
+     "templates/images/32x32/remove.png",
+     "templates/images/favicon.ico",
+     "templates/images/logo.png",
+     "templates/preview/index.html.haml",
+     "templates/stylesheets/ie.scss",
+     "templates/stylesheets/ie6.scss",
+     "templates/stylesheets/partials/_application.sass",
+     "templates/stylesheets/partials/_base.sass",
+     "templates/stylesheets/partials/_content.sass",
+     "templates/stylesheets/partials/_cyt.sass",
+     "templates/stylesheets/partials/_formtastic.sass",
+     "templates/stylesheets/partials/_formtastic_cyt.sass",
+     "templates/stylesheets/partials/_header.sass",
+     "templates/stylesheets/partials/_invoice.sass",
+     "templates/stylesheets/partials/_jquery.sass",
+     "templates/stylesheets/partials/_layout.sass",
+     "templates/stylesheets/partials/_navigation.sass",
+     "templates/stylesheets/partials/_pagination.sass",
+     "templates/stylesheets/partials/_redmine.sass",
+     "templates/stylesheets/partials/_scaffold.sass",
+     "templates/stylesheets/partials/_sidebar.sass",
+     "templates/stylesheets/partials/content/_ajax_indicator.sass",
+     "templates/stylesheets/partials/content/_fancy_buttons.sass",
+     "templates/stylesheets/partials/content/_flash_errors.sass",
+     "templates/stylesheets/partials/content/_icons.sass",
+     "templates/stylesheets/partials/content/_overview.sass",
+     "templates/stylesheets/partials/content/_table_list.sass",
+     "templates/stylesheets/partials/formtastic/_formtastic_base.sass",
+     "templates/stylesheets/partials/jquery/_jquery_ui.sass",
+     "templates/stylesheets/partials/jquery/_tooltip.sass",
+     "templates/stylesheets/partials/navigation/_main.sass",
+     "templates/stylesheets/partials/navigation/_sidebar.sass",
+     "templates/stylesheets/print.sass",
+     "templates/stylesheets/print.scss",
+     "templates/stylesheets/screen.scss",
+     "templates/stylesheets/themes/default/colors.sass",
+     "templates/stylesheets/themes/red/colors.sass",
+     "templates/test.css",
      "test/helper.rb",
      "test/test_styleyt.rb"
   ]
