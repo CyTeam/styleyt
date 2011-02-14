@@ -13,9 +13,9 @@ begin
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.rubyforge_project = gem.name
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
-    gem.files = Dir["{lib,test}/**/*", "[A-Z]*"]
+    gem.files = Dir["{lib,test,templates}/**/*", "[A-Z]*"]
     gem.require_path = 'lib'
-    gem.add_dependency 'rails', '3.0.0'
+    gem.add_dependency 'rails', '~>3.0.0'
     gem.add_dependency 'haml'
     gem.add_dependency 'compass'
   end
